@@ -108,7 +108,7 @@ The bottom of the stack is the first function invoked. The stack is processed fr
 
 ---
 
-### **setTimeout**
+### **setTimeout Function**
 
 **Definition:** A function that asynchronously invokes a callback after a delay in milliseconds
 ```js
@@ -144,7 +144,7 @@ setTimeout(function(){
 
 ---
 
-### **setInterval**
+### **setInterval Function**
 
 **Definition:** A function that invokes a callback after every x milliseconds, where x is provided to setInterval
 ```js
@@ -195,4 +195,32 @@ function countDown(seconds){
     }
   }, 1000);
 }
+```
+
+---
+
+## Queues
+
+**Definition:** An ordered list of functions waiting to be placed on the stack. Functions in the queue are processed on a first in, first out basis (FIFO)
+
+## Event Loops
+
+**Definition:** Functionality in the JavaScript runtime that checks the queue when the stack is empty. If the stack is empty, the front of the queue is placed in the stack.
+
+Note: When we make a callback, the callback function is placed in the Queue. The Event Loop waits until the Stack is empty to move the function from the Queue to the Stack
+
+## JavaScript is Single Threaded
+
+**Definition:** Has only one call-stack. Code execution is linear. Code that is running cannot be interrupted by something else going on in the program.
+```js
+// This will not run after '0' seconds as we might assume
+// Only after the Stack is empty and the Event Loop moves the callback from the Queue to the Stack
+ setTimeout(function() {
+   console.log("Hello from the timeout");
+ }, 0);
+
+ for (var i = 0; i < 1000000000; i++) {
+   var x = i * 2;
+ }
+ console.log("Done with loop");
 ```
