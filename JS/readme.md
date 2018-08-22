@@ -1,8 +1,8 @@
 # Advanced JS Notes
 
-## JS Async Foundation
+## **JS Async Foundation**
 
-### **Callback Functions**
+### Callback Functions
 
 * Callback functions
   * A function that is passed into another function as a parameter then invoked by that other function
@@ -105,3 +105,6 @@ The bottom of the stack is the first function invoked. The stack is processed fr
 ## Heaps
 
 **Definition:** An area in memory where the data is stored
+
+---
+
