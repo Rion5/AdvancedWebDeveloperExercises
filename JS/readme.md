@@ -180,3 +180,19 @@ setTimeout(function(){
    }
  }, 1000);
 ```
+
+**Practice:** countDown function will accept 1 param which is a time in seconds to count down. The function should console.log the time remaining every second. Once timer get to 0, timer should be stopped and display a message
+```js
+function countDown(seconds){
+  var intervalId = setInterval(function(){
+    seconds--;
+    if(seconds > 0){
+      console.log("Timer:" + seconds);
+    }
+    if(seconds == 0){
+      console.log("Ring Ring Ring!!!");
+      clearInterval(intervalId);
+    }
+  }, 1000);
+}
+```
