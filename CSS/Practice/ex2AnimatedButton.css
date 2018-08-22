@@ -4,4 +4,20 @@
     cursor: pointer;
     display: block;
     position: relative;
+    background-color: #fcad26;
+    font-size: 16px;
+    font-weight: 300px;
+    color: white;
+    /* Capitalize text */
+    text-transform: uppercase;
+    /* White Space between text */
+    letter-spacing: 2px;
+    /* Space between the content and the 'border' */
+    padding: 25px 80px;
+    /* Space outside the border. margin-top = 0, margin-right */
+    margin:0 auto;
+    /* Curves border corners */
+    border-radius: 20px;
+    /* Applies a shadow. box-shadow: horizontal offset shadow, vertical offset shadow */
+    box-shadow: 0px 6px #efa424;
 }
