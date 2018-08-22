@@ -91,3 +91,17 @@ findIndex(arr, function(num, index, array) {
 });
 //returned result: 3
 ```
+
+---
+
+## Stacks
+
+**Definition:** An ordered data structure that keeps track of function invocations *(Part of the JavaScript runtime)*
+The bottom of the stack is the first function invoked. The stack is processed from top to bottom.
+
+* Whenever you invoke a function, the details of the invocation are *pushed* to the top of the stack
+* Whenever a function returns, the information about the invocation is *popped* off the top of the stack
+
+## Heaps
+
+**Definition:** An area in memory where the data is stored
