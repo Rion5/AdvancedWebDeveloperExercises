@@ -224,3 +224,44 @@ Note: When we make a callback, the callback function is placed in the Queue. The
  }
  console.log("Done with loop");
 ```
+
+---
+
+## Promises
+
+**Definition:** Is an object that represents a task that will be completed in the future
+
+**Analogy:** Taking a number at a deli. The piece of paper you get is similar to a promise. The help you get at the counter is like the invocation of a callback.
+
+**Example:** Creating a Promise
+```js
+// Promise Constructor takes a single callback function as a parameter
+// the callback has 2 parameters, either a resolve or reject function
+ var p1 = new Promise(function(resolve, reject) {
+   resolve([1,2,3,4]);
+ });
+
+ p1.then(function(arr) {
+   console.log("Promise p1 resolved with data:", arr);
+ });
+```
+
+**Example:** Error Handling
+```js
+ var p1 = new Promise(function(resolve, reject) {
+   var num = Math.random();
+   if (num < 0.5) {
+     resolve(num);
+   } else {
+     reject(num);
+   }
+ });
+
+ p1.then(function(result) {
+   console.log("Success:", result);
+ }).catch(function(error) {
+   console.log("Error:", error);
+ });
+```
+
+---
