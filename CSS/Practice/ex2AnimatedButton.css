@@ -1,3 +1,12 @@
+body{
+    background-color: #fcd04b;
+    font-family: "Lato";
+    color:white;
+}
+h1{
+    text-align: center;
+    font-weight: 300;
+}
 .btn{
     outline: none;
     border: none;
@@ -20,4 +29,14 @@
     border-radius: 20px;
     /* Applies a shadow. box-shadow: horizontal offset shadow, vertical offset shadow */
     box-shadow: 0px 6px #efa424;
+}
+.btn:hover{
+    /* When user hovers over button, move the shadow up and the top down. This will give it an pressed down animation */
+    box-shadow: 0 4px #efa424;
+    top: 2px;
+}
+.btn:active{
+    /* Remove shadow when user presses button and move the top down */
+    box-shadow: none;
+    top: 6px;
 }
