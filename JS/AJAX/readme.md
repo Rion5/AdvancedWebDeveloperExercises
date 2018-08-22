@@ -12,3 +12,23 @@
   * jQuery, Axios, etc.
 
 ---
+
+## XML: Extended Markup Language
+
+**Example:** XML is syntactically similar to HTML, but it does not describe presentation like HTML does
+```XML
+<book>
+    <title>Eragon</title>
+    <author>Christopher Paolin</author>
+</book>
+
+```
+## JSON: JavaScript Object Notation
+
+**Example:** JSON looks (almost) exactly like JavaScript objects
+```JSON
+"book":{
+    "title": "Eragon",
+    "author": "Christopher Paolini"
+}
+```
