@@ -2,7 +2,7 @@
 
 ## **JS Async Foundation**
 
-### Callback Functions
+### **Callback Functions**
 
 * Callback functions
   * A function that is passed into another function as a parameter then invoked by that other function
@@ -108,3 +108,75 @@ The bottom of the stack is the first function invoked. The stack is processed fr
 
 ---
 
+### **setTimeout**
+
+**Definition:** A function that asynchronously invokes a callback after a delay in milliseconds
+```js
+ // setTimeout usage
+ function callback() {
+   console.log("callback function");
+ }
+ var delay = 1000;  // Delay is in ms
+ setTimeout(callback, delay); //setTimeout will invoke callback after delay 
+```
+
+**Example:**
+```js
+setTimeout(function(){
+    console.log("Runs in approx. 30s");
+}, 30000)
+```
+
+**Canceling setTimeout**
+```js
+//setTimeout returns an timeoutId
+ var timerId = setTimeout(function() {
+   console.log("This function runs in 30 seconds");
+ }, 30000);
+
+ setTimeout(function() {
+   console.log("Canceling the first setTimeout", timerId);
+   //clearTimeout, given the timeoutId
+   clearTimeout(timerId);
+ }, 2000);
+
+```
+
+---
+
+### **setInterval**
+
+**Definition:** A function that invokes a callback after every x milliseconds, where x is provided to setInterval
+```js
+ // setInterval usage
+ function callback() {
+   console.log("callback is called continuously");
+ }
+ var repeat = 3000;
+ setInterval(callback, repeat);
+```
+
+**Example:** Increments num, and console.log it every 1s
+```js
+ var num = 0;
+ setInterval(function() {
+   num++;
+   console.log("num:", num);
+ }, 1000);
+ //result: num: 1
+ //        num: 2
+```
+
+**Canceling setInterval**
+```js
+//Similar to setTimeout, setInterval returns an intervalId
+ var num = 0;
+ //num will increment until 3, then clearInterval
+ var intervalId = setInterval(function() {
+   num++;
+   console.log("num:", num);
+   if (num === 3) {
+     clearInterval(intervalId);
+   }
+ }, 1000);
+```
