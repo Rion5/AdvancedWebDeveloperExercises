@@ -1,0 +1,7 @@
+.btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    position: relative;
+}
