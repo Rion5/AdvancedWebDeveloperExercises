@@ -2,9 +2,9 @@
 
 ## CSS Animations: Transforms and Transitions
 
-### Intro to Pseudo-classes
+### **Pseudo-classes**
 
-Pseudo-classes are special selectors that specifies a special state of the selected element(s)
+**Definition:** Pseudo-classes are special selectors that specifies a special state of the selected element(s)
 
 * **:hover** - Can be used to apply a style when the user hovers over a button.
 
@@ -31,5 +31,37 @@ input:focus{
 /*When a button is being held down it is active and will change the text color to green*/
 button:active{
     color: green;
+}
+```
+
+---
+### **Transforms**
+
+**Definition:** Lets you manipulate the coordinate space of the CSS visual formatting model *(move, warp, rotate, and scale elements)*
+
+* **:translate** - Move an element
+
+```css
+/*Move all divs 100px right*/
+div{
+    transform: translateX(100px);
+}
+```
+
+* **:scale** - Alter the size of an element
+
+```css
+/*Double the size of all divs*/
+div{
+    transform: scale(2);
+}
+```
+
+* **:transform-origin** - Modify the origin for transformations of an element
+
+```css
+/*Sets the origin at the top left which is the same as (0, 0)*/
+.transformed{
+    transform-origin: left top;
 }
 ```
