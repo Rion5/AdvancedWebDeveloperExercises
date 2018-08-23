@@ -4,13 +4,6 @@
 
 **Example:** Compare Reddit and Pintrest. Reddit uses the older method of getting more content; by making a browser request. Pintrest on the other hand uses AJAX to load more content when a User scrolls to the bottom of the page.
 
-**Making Requests with JavaScript**
-
-* XMLHTTP Request
-* The Fetch API
-* 3rd Party Libraries
-  * jQuery, Axios, etc.
-
 ---
 
 ## XML: Extended Markup Language
@@ -31,4 +24,39 @@
     "title": "Eragon",
     "author": "Christopher Paolini"
 }
+```
+
+---
+
+## Making Requests with JavaScript
+
+* XMLHTTP Request
+* The Fetch API
+* 3rd Party Libraries
+  * jQuery, Axios, etc.
+
+## XMLHTTP Requests
+**Definition:** XMLHttpRequest objects can be used to request data from a web server. You can:
+
+* Update a web
+* Request data from a server - after the page has loaded
+* Receive data from a server - after the page has loaded
+* Send data to a server - in the background
+
+**Example:** XMLHTTP Request to Github zen API
+```js
+var XHR = new XMLHttpRequest();
+XHR.onreadystatechange = function(){
+    //Ready States ranging from 0 - 4
+    // 0 - Unsent, 1 - Opened, 2 - Headers received, 3 - Loading, 4 - Done
+    if(XHR.readyState ==4){
+        if(XHR.status == 200){
+            console.log(XHR.responseText);
+        } else{
+            console.log("There was a problem");
+        }
+    }
+}
+XHR.open("GET", "https://api.github.com/zen");
+XHR.send();
 ```
