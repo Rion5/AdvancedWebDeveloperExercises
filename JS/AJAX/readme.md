@@ -165,3 +165,7 @@ var handleErrors = function(request){
 ---
 
 ## AJAX With jQuery
+
+[back to top](#ajax-asynchronous-javascript-and-xml)
+
+---
