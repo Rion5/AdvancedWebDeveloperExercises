@@ -41,11 +41,11 @@ function updateProfile(data){
     var username = data.login.username;
     var email = data.email;
     var city = data.location.city;
-    fullNameDisplay.textContent = fullName;
+    fullNameDisplay.innerHTML = fullName;
     avatarDisplay.src = avatar;
-    usernameDisplay.textContent = username;
-    emailDisplay.textContent = email;
-    cityDisplay.textContent = city;
+    usernameDisplay.innerHTML = username;
+    emailDisplay.innerHTML = email;
+    cityDisplay.innerHTML = city;
 
     console.log(fullName);
 }
