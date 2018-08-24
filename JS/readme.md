@@ -12,6 +12,6 @@ Click link to view notes
 
 **Exercises:**
 
-* <a href="https://github.com/Rion5/AdvancedWebDeveloperExercises/tree/master/JS/AJAX/RandomImageApp" target="_blank">RandomImageApp</a>
+* [RandomImageApp](https://github.com/Rion5/AdvancedWebDeveloperExercises/tree/master/JS/AJAX/RandomImageApp)
 * [BitcoinPriceChecker](https://github.com/Rion5/AdvancedWebDeveloperExercises/tree/master/JS/AJAX/BitcoinPriceChecker)
 * [RandomUserGenerator](https://github.com/Rion5/AdvancedWebDeveloperExercises/tree/master/JS/AJAX/RandomUserGenerator)
