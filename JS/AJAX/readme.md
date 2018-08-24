@@ -30,12 +30,12 @@
 
 ## Making Requests with JavaScript
 
-* XMLHTTP Request
-* The Fetch API
+* [XMLHTTP Request](##XMLHTTP_Request)
+* [The Fetch API](##Fetch_API)
 * 3rd Party Libraries
   * jQuery, Axios, etc.
 
-## XMLHTTP Requests
+## XMLHTTP Requests ##
 **Definition:** XMLHttpRequest objects can be used to request data from a web server. You can:
 
 * Update a web
@@ -158,3 +158,11 @@ var handleErrors = function(request){
     return request;
 }
 ```
+
+**Problems with Fetch**
+* Main problem is lack of browser support
+
+---
+
+## AJAX With jQuery
+**Definition:** T
