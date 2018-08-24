@@ -95,3 +95,24 @@ fetch(url)
     console.log(data);
 });
 ```
+
+### Fetch Options
+**Definition:** Fetch API provides a JS interface for accessing and manipulating parts of the HTTP pipeline, such as request and responses. It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network.
+**Note** The fetch() API only rejects a promise when a network error is encountered, although this usually mean permissions issues
+
+```js
+fetch(url, {
+    method: "POST",
+    body: JSON.stringify({
+        name: "Joe",
+        login: "Joe123"
+    })
+})
+.then(function(data){
+    //do something
+})
+.catch(function (error){
+    //handle error
+});
+```
+
