@@ -60,3 +60,38 @@ XHR.onreadystatechange = function(){
 XHR.open("GET", "https://api.github.com/zen");
 XHR.send();
 ```
+
+**Problems with XHR**
+
+* Ugly, Bulky Syntax
+  * Over 15+ years old
+* Can't support streaming data
+
+---
+
+## Fetch API
+**Definition:** The Fetch API provides an interface for fetching resources. Similar to XMLHttpRequests, but hte new API provides a more powerful and flexible feature set.
+```js
+fetch(url)
+.then(function(res){
+    console.log(res);
+})
+.catch(function(error){
+    console.log(error)
+});
+```
+
+**Example:**
+```js
+var url = "https://api.coindesk.com/v1/bpi/currentprice.json";
+fetch(url)
+//1st .then returns a promise object
+.then(function(response){
+    console.log(response);
+    return response.json();
+})
+//2nd .then returns parsedJSON data
+.then(function(data){
+    console.log(data);
+});
+```
