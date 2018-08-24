@@ -166,6 +166,27 @@ var handleErrors = function(request){
 
 ## AJAX With jQuery
 
+### jQuery AJAX Methods
+* $.ajax
+  * $.get
+  * $.post
+  * $.getJSON
+* $.get, $.post, $.getJSON are shorthand methods that call $.ajax
+
+**Example $.ajax:** The 'base' jQuery Method. Creates an XMLHttpRequest under the hood
+```js
+$.ajax({
+    method: "GET",
+    url: "some.api.com",
+})
+.done(function(res){
+    console.log(res);
+})
+.fail(function(){
+    //do something
+})
+```
+
 [back to top](#ajax-asynchronous-javascript-and-xml)
 
 ---
