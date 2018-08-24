@@ -57,6 +57,9 @@ body {
   border-radius: 18em;
 }
 
+#fullname{
+  text-transform: capitalize;
+}
 
 .footer {
 	margin: 2em auto;
