@@ -11,6 +11,7 @@ Click link to view notes
 ### XHR and Fetch
 
 **Exercises:**
-* [RandomImageApp](https://github.com/Rion5/AdvancedWebDeveloperExercises/tree/master/JS/AJAX/RandomImageApp)
+
+* <a href="https://github.com/Rion5/AdvancedWebDeveloperExercises/tree/master/JS/AJAX/RandomImageApp" target="_blank">RandomImageApp</a>
 * [BitcoinPriceChecker](https://github.com/Rion5/AdvancedWebDeveloperExercises/tree/master/JS/AJAX/BitcoinPriceChecker)
 * [RandomUserGenerator](https://github.com/Rion5/AdvancedWebDeveloperExercises/tree/master/JS/AJAX/RandomUserGenerator)
