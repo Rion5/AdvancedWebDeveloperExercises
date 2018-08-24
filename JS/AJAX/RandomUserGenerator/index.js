@@ -1,6 +1,9 @@
 //Get DOM elements
 var btn = document.querySelector("#btn");
 var fullNameDisplay = document.getElementById("fullname");
+var avatarDisplay = document.getElementById("avatar");
+
+//Click Event
 btn.addEventListener("click", function(){
     //Refactored fetch code will look similar to this
     // fetch(url)
@@ -21,7 +24,8 @@ btn.addEventListener("click", function(){
         //Get values from parsed object (named data)
         var fullName = data.results[0].name.first + " " + data.results[0].name.last;
         fullNameDisplay.textContent = fullName;
-        var icon = data.results[0].picture.thumbnail;
+        var avatar = data.results[0].picture.large;
+        avatarDisplay.src = avatar;
         console.log(fullName);
     })
     .catch(function(err){
