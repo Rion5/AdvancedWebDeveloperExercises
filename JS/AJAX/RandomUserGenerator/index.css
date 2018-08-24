@@ -36,6 +36,7 @@ body {
   color: #3498db;
   font-size: .87em;
   font-family: "varela round", sans-serif;
+  text-transform: capitalize;
 }
 
 .user-profile > .description {
@@ -58,6 +59,10 @@ body {
 }
 
 #fullname{
+  text-transform: capitalize;
+}
+
+#city{
   text-transform: capitalize;
 }
 
