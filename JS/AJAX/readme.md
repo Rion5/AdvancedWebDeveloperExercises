@@ -116,3 +116,45 @@ fetch(url, {
 });
 ```
 
+### Fetch API Error Handling
+**Example:** Fetch url, if response is invalid, throw an error, and proceed to the .catch() for error handling
+
+```js
+fetch(url)
+.then(function(data){
+    if(!res.ok){
+        throw Error(404); //Number is up to user. 404 is standard
+    }
+    return res;
+})
+.then(function(response){
+    //do something
+})
+.catch(function (error){
+    //handle error
+});
+```
+**Note:** It is very common to create a general purpose error handling function to help keep error checking code DRY
+```js
+fetch(url)
+.then(handleErrors)         //Generic error handling function
+.then(function(data){
+    if(!res.ok){
+        throw Error(404);   //Number is up to user. 404 is standard
+    }
+    return res;
+})
+.then(function(response){
+    //do something
+})
+.catch(function (error){
+    //handle error
+});
+
+var handleErrors = function(request){
+    if(!request.ok){
+        throw Error(request.status);
+    }
+    return request;
+}
+```
