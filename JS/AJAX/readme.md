@@ -30,9 +30,9 @@
 
 ## Making Requests with JavaScript
 
-* XMLHTTP Request
-* The Fetch API
-* 3rd Party Libraries
+* [XMLHTTP Request](##XMLHTTP-Request)
+* [The Fetch API](##Fetch-API)
+* [3rd Party Libraries](##AJAX-With-jQuery)
   * jQuery, Axios, etc.
 
 ## XMLHTTP Requests
@@ -158,3 +158,10 @@ var handleErrors = function(request){
     return request;
 }
 ```
+
+**Problems with Fetch**
+* Main problem is lack of browser support
+
+---
+
+## AJAX With jQuery
