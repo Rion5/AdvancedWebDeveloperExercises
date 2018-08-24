@@ -16,6 +16,7 @@ btn.addEventListener("click", function(){
     
     var url = "https://randomuser.me/api/";
     fetch(url)
+    .then(handleErrors)
     .then(parseJSON)            //returns parsed promise object
     .then(updateProfile)        //Updates html with retrieved values
     .catch(function(err){
@@ -46,6 +47,17 @@ function updateProfile(data){
     usernameDisplay.innerHTML = username;
     emailDisplay.innerHTML = email;
     cityDisplay.innerHTML = city;
-
     console.log(fullName);
+}
+
+function handleErrors(res){
+    //If the status code != 200, then throw an error
+    if(!res.ok){
+        throw Error(res.status);
+    }
+    return res;
+}
+
+function displayErrors(res){
+
 }
