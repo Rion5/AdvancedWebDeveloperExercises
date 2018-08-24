@@ -14,21 +14,33 @@ btn.addEventListener("click", function(){
     
     var url = "https://randomuser.me/api/";
     fetch(url)
-    .then(function(res){
-        console.log(res);       //res = promise object
-        console.log("Parsing!");
-        return res.json();      //return parsed object
-    })
-    .then(function(data){
-        console.log(data);      //data = parsed JSON object
-        //Get values from parsed object (named data)
-        var fullName = data.results[0].name.first + " " + data.results[0].name.last;
-        fullNameDisplay.textContent = fullName;
-        var avatar = data.results[0].picture.large;
-        avatarDisplay.src = avatar;
-        console.log(fullName);
-    })
+    .then(parseJSON)            //returns parsed promise object
+    .then(updateProfile)        //Updates html with retrieved values
     .catch(function(err){
         console.log(err);
     });
 });
+
+function parseJSON(res){
+    console.log(res);       //res = promise object
+    console.log("Parsing!");
+    return res.json()      //return parsed object
+    .then(function(parsedData){
+        return parsedData.results[0];
+    });
+}
+
+function updateProfile(data){
+    console.log(data);      //data = parsed JSON object
+    //Get values from parsed object (named data)
+    //Values include, fullName, avatar, username, email, city
+    var fullName = data.results[0].name.first + " " + data.results[0].name.last;
+    var avatar = data.results[0].picture.large;
+    var username = data.results[0].login.username;
+    var email = data.results[0].email;
+    var city = data.results[0].location.city;
+    fullNameDisplay.textContent = fullName;
+    avatarDisplay.src = avatar;
+
+    console.log(fullName);
+}
