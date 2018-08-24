@@ -30,15 +30,9 @@
 
 ## Making Requests with JavaScript
 
-<<<<<<< HEAD
 * [XMLHTTP Request](##XMLHTTP-Request)
 * [The Fetch API](##Fetch-API)
 * [3rd Party Libraries](##AJAX-With-jQuery)
-=======
-* [XMLHTTP Request](##XMLHTTP_Request)
-* [The Fetch API](##Fetch_API)
-* 3rd Party Libraries
->>>>>>> 6eb3a74227a3082a1cf35b1b803676e50b151f0e
   * jQuery, Axios, etc.
 
 ## XMLHTTP Requests ##
