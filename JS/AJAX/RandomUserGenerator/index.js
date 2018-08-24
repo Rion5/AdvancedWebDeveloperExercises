@@ -19,9 +19,7 @@ btn.addEventListener("click", function(){
     .then(handleErrors)
     .then(parseJSON)            //returns parsed promise object
     .then(updateProfile)        //Updates html with retrieved values
-    .catch(function(err){
-        console.log(err);
-    });
+    .catch(displayErrors);
 });
 
 function parseJSON(res){
@@ -58,6 +56,6 @@ function handleErrors(res){
     return res;
 }
 
-function displayErrors(res){
-
+function displayErrors(err){
+    console.log(err);
 }
