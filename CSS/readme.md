@@ -35,6 +35,7 @@ button:active{
 ```
 
 ---
+
 ### **Transforms**
 
 **Definition:** Lets you manipulate the coordinate space of the CSS visual formatting model *(move, warp, rotate, and scale elements)*
@@ -65,3 +66,13 @@ div{
     transform-origin: left top;
 }
 ```
+
+* **:rotate** - Rotate element at the element's origin point
+
+```css
+div{
+    transform: rotate(90deg);
+}
+```
+
+---
