@@ -19,4 +19,6 @@ p{
     transform-origin: top right;
     transition-duration: 1s;
     transition-timing-function: linear;
+    border-radius: 30px;
+    transition-delay: 0.5s;
 }
