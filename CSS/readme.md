@@ -49,15 +49,6 @@ div{
 }
 ```
 
-* **:transform-origin()** - Modify the origin for transformations of an element
-
-```css
-/*Sets the origin at the top left which is the same as (0, 0)*/
-.transformed{
-    transform-origin: left top;
-}
-```
-
 * **:rotate()** - Rotate element at the element's origin point
 
 ```css
@@ -75,5 +66,50 @@ div{
 }
 ```
 
+* **:transform-origin()** - Modify the origin for transformations of an element
+
+```css
+/*Sets the origin at the top left which is the same as (0, 0)*/
+.transformed{
+    transform-origin: left top;
+}
+```
+
 ---
 
+### **Transitions**
+
+**Definition:** Allows user to control animation speed when changing CSS properties (duration, property, delay, timing-function)
+
+* **transition-duration: (time);** - How long should the transition last?
+
+```css
+.transition{
+    transition-duration: 1s;
+}
+```
+
+* **transition-property: (property);** - What properties should be transitioned?
+  * background, color, opacity, transform, all
+
+```css
+.transition{
+    transition-property: border-radius;
+}
+```
+
+* **transition-delay: (time);** - How long of a delay before the transition starts?
+
+```css
+.transition{
+    transition-delay: 4s;
+}
+```
+
+* **transition-duration: (time);** - What is the 'acceleration curve' for the transition?
+
+```css
+.transition{
+    transition-timing-function: /* ease-in , linear, etc.. */
+}
+```
