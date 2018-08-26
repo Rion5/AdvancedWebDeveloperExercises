@@ -5,6 +5,12 @@ p{
     background-color: #1acc8c;
     border: 2px solid #1c2e40;  /*Black line borders around box*/
 }
+p:nth-child(4){
+    transform: translateY(100px);
+    font-family: fantasy;
+    font-size: 3rem;
+    transition: transform 3s ease-in;
+}
 .transformed{
     background-color: #3697db;
     transform: scale(2) translateX(300px) rotate(5deg);
@@ -21,4 +27,9 @@ p{
     transition-timing-function: linear;
     border-radius: 30px;
     transition-delay: 0.5s;
+}
+.shortHand:active{
+    transform: rotate(-90deg) scale(2) translate(100px, 100px);
+    transition-duration: 3s;
+    transition-timing-function: ease-in-out;
 }
