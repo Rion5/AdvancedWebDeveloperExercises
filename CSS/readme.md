@@ -40,7 +40,7 @@ button:active{
 
 **Definition:** Lets you manipulate the coordinate space of the CSS visual formatting model *(move, warp, rotate, and scale elements)*
 
-* **:translate** - Move an element
+* **:translate()** - Move an element
 
 ```css
 /*Move all divs 100px right*/
@@ -49,16 +49,7 @@ div{
 }
 ```
 
-* **:scale** - Alter the size of an element
-
-```css
-/*Double the size of all divs*/
-div{
-    transform: scale(2);
-}
-```
-
-* **:transform-origin** - Modify the origin for transformations of an element
+* **:transform-origin()** - Modify the origin for transformations of an element
 
 ```css
 /*Sets the origin at the top left which is the same as (0, 0)*/
@@ -67,7 +58,7 @@ div{
 }
 ```
 
-* **:rotate** - Rotate element at the element's origin point
+* **:rotate()** - Rotate element at the element's origin point
 
 ```css
 div{
@@ -75,4 +66,14 @@ div{
 }
 ```
 
+* **:scale()** - Alter the size of an element
+
+```css
+/*Double the size of all divs*/
+div{
+    transform: scale(2);
+}
+```
+
 ---
+
