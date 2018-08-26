@@ -1,0 +1,12 @@
+p{
+    width: 150px;
+    height: 150px;
+    color: #ecf0f1;
+    background-color: #1acc8c;
+    border: 2px solid #1c2e40;  /*Black line borders around box*/
+}
+.transformed{
+    background-color: #3697db;
+    transform: scale(2) translateX(300px) rotate(5deg);
+    transform-origin: top right;
+}
