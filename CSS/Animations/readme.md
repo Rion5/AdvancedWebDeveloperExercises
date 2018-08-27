@@ -122,3 +122,11 @@ div{
     transition: transform 1.5s ease-in 1;
 }
 ```
+
+---
+
+## **Keyframe Animations**
+
+**Reminder:** Transitions allow us to animate a single state change (From state A to state B)
+
+**Note:** Keyframes allow for much more complex multi-state animations (From state A to state B to state C ... )
