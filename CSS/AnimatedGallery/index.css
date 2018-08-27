@@ -30,3 +30,25 @@ body{
 .navbar-inverse .navbar-brand{
     color: white;
 }
+
+div.red {
+  background-color: #e74c3c;
+  padding: 3px;
+}
+div.red i {
+  color: #e74c3c;
+}
+div.green {
+  background-color: #16a085;
+  padding: 3px;
+}
+div.green i {
+  color: #16a085;
+}
+div.blue {
+  background-color: #34495e;
+  padding: 3px;
+}
+div.blue i {
+  color: #34495e;
+}
