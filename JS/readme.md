@@ -1,4 +1,4 @@
-# Advanced JS Notes
+# **Advanced JS Notes**
 
 ## [**JS Async Foundation**](https://github.com/Rion5/AdvancedWebDeveloperExercises/tree/master/JS/AsyncFoundation)
 

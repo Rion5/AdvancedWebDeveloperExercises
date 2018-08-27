@@ -1,8 +1,6 @@
-# **Advanced CSS Notes**
+# **CSS Animations: Transforms and Transitions**
 
-## CSS Animations: Transforms and Transitions
-
-### **Pseudo-classes**
+## **Pseudo-classes**
 
 **Definition:** Pseudo-classes are special selectors that specifies a special state of the selected element(s)
 
@@ -36,7 +34,7 @@ button:active{
 
 ---
 
-### **Transforms**
+## **Transforms**
 
 **Definition:** Lets you manipulate the coordinate space of the CSS visual formatting model *(move, warp, rotate, and scale elements)*
 
@@ -77,7 +75,7 @@ div{
 
 ---
 
-### **Transitions**
+## **Transitions**
 
 **Definition:** Allows user to control animation speed when changing CSS properties (duration, property, delay, timing-function)
 
@@ -114,8 +112,10 @@ div{
 }
 ```
 
-## Shorthand Transitions
+## **Shorthand Transitions**
+
 **Example:**
+
 ```css
 div{
  /* transition: <property> <duration> <timing-function> <delay> */

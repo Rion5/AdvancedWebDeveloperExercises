@@ -1,6 +1,6 @@
 # **JS Async Foundation**
 
-## Callback Functions
+## **Callback Functions**
 
 * Callback functions
   * A function that is passed into another function as a parameter then invoked by that other function
@@ -36,7 +36,7 @@ var answer = sendMessage("Are you sure??", confirm);
 
 ---
 
-## forEach Function
+## **forEach Function**
 
 **Definition:** Executes a provided function once for each array element
 
@@ -69,7 +69,7 @@ forEach(strings, function(str, index, array) {
 
 ---
 
-## findIndex Function
+## **findIndex Function**
 
 **Definition:** Returns the index of the 1st element in the array for which the callback returns a truthy value. -1 is returned if the callback never returns a truthy value.
 ```js
@@ -92,7 +92,7 @@ findIndex(arr, function(num, index, array) {
 
 ---
 
-## Stacks
+## **Stacks**
 
 **Definition:** An ordered data structure that keeps track of function invocations *(Part of the JavaScript runtime)*
 The bottom of the stack is the first function invoked. The stack is processed from top to bottom.
@@ -100,13 +100,13 @@ The bottom of the stack is the first function invoked. The stack is processed fr
 * Whenever you invoke a function, the details of the invocation are *pushed* to the top of the stack
 * Whenever a function returns, the information about the invocation is *popped* off the top of the stack
 
-## Heaps
+## **Heaps**
 
 **Definition:** An area in memory where the data is stored
 
 ---
 
-## setTimeout Function
+## **setTimeout Function**
 
 **Definition:** A function that asynchronously invokes a callback after a delay in milliseconds
 ```js
@@ -142,7 +142,7 @@ setTimeout(function(){
 
 ---
 
-## setInterval Function
+## **setInterval Function**
 
 **Definition:** A function that invokes a callback after every x milliseconds, where x is provided to setInterval
 ```js
@@ -197,17 +197,17 @@ function countDown(seconds){
 
 ---
 
-## Queues
+## **Queues**
 
 **Definition:** An ordered list of functions waiting to be placed on the stack. Functions in the queue are processed on a first in, first out basis (FIFO)
 
-## Event Loops
+## **Event Loops**
 
 **Definition:** Functionality in the JavaScript runtime that checks the queue when the stack is empty. If the stack is empty, the front of the queue is placed in the stack.
 
 Note: When we make a callback, the callback function is placed in the Queue. The Event Loop waits until the Stack is empty to move the function from the Queue to the Stack
 
-## JavaScript is Single Threaded
+## **JavaScript is Single Threaded**
 
 **Definition:** Has only one call-stack. Code execution is linear. Code that is running cannot be interrupted by something else going on in the program.
 ```js
@@ -225,7 +225,7 @@ Note: When we make a callback, the callback function is placed in the Queue. The
 
 ---
 
-## Promises
+## **Promises**
 
 **Definition:** Is an object that represents a task that will be completed in the future
 
