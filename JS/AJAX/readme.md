@@ -187,6 +187,44 @@ $.ajax({
 })
 ```
 
+### Shorthand Methods
+
+* jQuery.get( url [, data ] [, success ] [, dataType ] )
+
+**Example:** Load data from the server using a HTTP GET request
+```js
+$.get( "ajax/test.html", function( data ) {
+  $( ".result" ).html( data );
+  alert( "Load was performed." );
+});
+```
+
+* jQuery.post( url [, data ] [, success ] [, dataType ] )
+
+**Example:** Load data from the server using a HTTP POST request
+```js
+$.post( "ajax/test.html", function( data ) {
+  $( ".result" ).html( data );
+});
+```
+
+* jQuery.getJSON( url [, data ] [, success ] )
+
+**Example:** Load JSON-encoded data from the server using a GET HTTP request.
+```js
+$.getJSON( "ajax/test.json", function( data ) {
+  var items = [];
+  $.each( data, function( key, val ) {
+    items.push( "<li id='" + key + "'>" + val + "</li>" );
+  });
+ 
+  $( "<ul/>", {
+    "class": "my-new-list",
+    html: items.join( "" )
+  }).appendTo( "body" );
+});
+```
+
 [back to top](#ajax-asynchronous-javascript-and-xml)
 
 ---
