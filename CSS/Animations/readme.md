@@ -174,3 +174,44 @@ p{
 
 ---
 
+## **Other Common CSS Animation Properties**
+
+* **animation-iteration-count:** *number|infinite|initial|inherit;*
+  * How many times should it repeat?
+
+**Example:** Play the animation forever
+```css
+div {
+    animation-iteration-count: infinite;
+}
+```
+
+* **animation-fill-mode:** *none|forwards|backwards|both|initial|inherit;*
+  * Specifies how an animation should apply styles before and after the animation (when the animation is not playing)
+
+**Example:** Let the div element get the style values set by the 1st keyframe before the animation starts, and retain the style values from the last keyframe when the animation ends
+```css
+div {
+    animation-fill-mode: both;
+}
+```
+
+* **animation-direction:** *normal|reverse|alternate|alternate-reverse|initial|inherit;*
+  * Whether an animation should be played forwards, backwards or in a alternate cycles (forwards and backwards)?
+
+**Example:** Play the animation backwards first, then forwards
+```css
+div {
+    animation-direction: alternate-reverse;
+}
+```
+
+* **animation-play-state:** *paused|running|initial|inherit;*
+  * Specifies whether the animation is running or paused
+
+**Example:** Pause an animation on hover
+```css
+div:hover {
+    animation-play-state: paused;
+}
+```
