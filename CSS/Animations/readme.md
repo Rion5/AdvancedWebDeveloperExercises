@@ -130,3 +130,5 @@ div{
 **Reminder:** Transitions allow us to animate a single state change (From state A to state B)
 
 **Note:** Keyframes allow for much more complex multi-state animations (From state A to state B to state C ... )
+
+![image](https://user-images.githubusercontent.com/31965265/44663649-23e7e000-a9df-11e8-9bc6-376a6eadea1c.png)
