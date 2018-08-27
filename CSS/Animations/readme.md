@@ -1,4 +1,4 @@
-# Advanced CSS Notes
+# **Advanced CSS Notes**
 
 ## CSS Animations: Transforms and Transitions
 
