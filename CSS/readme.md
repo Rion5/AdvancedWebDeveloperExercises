@@ -113,3 +113,12 @@ div{
     transition-timing-function: /* ease-in , linear, etc.. */
 }
 ```
+
+## Shorthand Transitions
+**Example:**
+```css
+div{
+ /* transition: <property> <duration> <timing-function> <delay> */
+    transition: transform 1.5s ease-in 1;
+}
+```
