@@ -6,9 +6,10 @@
 
 ---
 
-## XML: Extended Markup Language
+## **XML: Extended Markup Language**
 
 **Example:** XML is syntactically similar to HTML, but it does not describe presentation like HTML does
+
 ```XML
 <book>
     <title>Eragon</title>
@@ -16,7 +17,8 @@
 </book>
 
 ```
-## JSON: JavaScript Object Notation
+
+## **JSON: JavaScript Object Notation**
 
 **Example:** JSON looks (almost) exactly like JavaScript objects
 ```JSON
@@ -28,14 +30,15 @@
 
 ---
 
-## Making Requests with JavaScript
+## **Making Requests with JavaScript**
 
 * [XMLHTTP Request](#xmlhttp-requests)
 * [The Fetch API](#fetch-api)
 * [3rd Party Libraries](#ajax-with-jquery)
   * jQuery, Axios, etc.
 
-## XMLHTTP Requests ##
+## **XMLHTTP Requests**
+
 **Definition:** XMLHttpRequest objects can be used to request data from a web server. You can:
 
 * Update a web
@@ -44,6 +47,7 @@
 * Send data to a server - in the background
 
 **Example:** XMLHTTP Request to Github zen API
+
 ```js
 var XHR = new XMLHttpRequest();
 XHR.onreadystatechange = function(){
@@ -61,7 +65,7 @@ XHR.open("GET", "https://api.github.com/zen");
 XHR.send();
 ```
 
-**Problems with XHR**
+**Problems with XHR:**
 
 * Ugly, Bulky Syntax
   * Over 15+ years old
@@ -69,7 +73,8 @@ XHR.send();
 
 ---
 
-## Fetch API
+## **Fetch API**
+
 **Definition:** The Fetch API provides an interface for fetching resources. Similar to XMLHttpRequests, but hte new API provides a more powerful and flexible feature set.
 ```js
 fetch(url)
@@ -82,6 +87,7 @@ fetch(url)
 ```
 
 **Example:**
+
 ```js
 var url = "https://api.coindesk.com/v1/bpi/currentprice.json";
 fetch(url)
@@ -96,7 +102,8 @@ fetch(url)
 });
 ```
 
-### Fetch Options
+### **Fetch Options**
+
 **Definition:** Fetch API provides a JS interface for accessing and manipulating parts of the HTTP pipeline, such as request and responses. It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network.
 **Note** The fetch() API only rejects a promise when a network error is encountered, although this usually mean permissions issues
 
@@ -116,7 +123,8 @@ fetch(url, {
 });
 ```
 
-### Fetch API Error Handling
+### **Fetch API Error Handling**
+
 **Example:** Fetch url, if response is invalid, throw an error, and proceed to the .catch() for error handling
 
 ```js
@@ -164,9 +172,9 @@ var handleErrors = function(request){
 
 ---
 
-## AJAX With jQuery
+## **AJAX With jQuery**
 
-### jQuery AJAX Methods
+### **jQuery AJAX Methods**
 * $.ajax
   * $.get
   * $.post
@@ -187,9 +195,9 @@ $.ajax({
 })
 ```
 
-### Shorthand Methods
+### **Shorthand Methods**
 
-* jQuery.get( url [, data ] [, success ] [, dataType ] )
+* **jQuery.get** *( url [, data ] [, success ] [, dataType ] )*
 
 **Example:** Load data from the server using a HTTP GET request
 ```js
@@ -199,7 +207,7 @@ $.get( "ajax/test.html", function( data ) {
 });
 ```
 
-* jQuery.post( url [, data ] [, success ] [, dataType ] )
+* **jQuery.post** *( url [, data ] [, success ] [, dataType ] )*
 
 **Example:** Load data from the server using a HTTP POST request
 ```js
@@ -208,22 +216,26 @@ $.post( "ajax/test.html", function( data ) {
 });
 ```
 
-* jQuery.getJSON( url [, data ] [, success ] )
+* **jQuery.getJSON** *( url [, data ] [, success ] )*
 
 **Example:** Load JSON-encoded data from the server using a GET HTTP request.
+
 ```js
 $.getJSON( "ajax/test.json", function( data ) {
   var items = [];
   $.each( data, function( key, val ) {
     items.push( "<li id='" + key + "'>" + val + "</li>" );
   });
- 
+
   $( "<ul/>", {
     "class": "my-new-list",
     html: items.join( "" )
   }).appendTo( "body" );
 });
 ```
+
+---
+
 
 [back to top](#ajax-asynchronous-javascript-and-xml)
 
