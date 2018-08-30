@@ -30,25 +30,39 @@ body{
 .navbar-inverse .navbar-brand{
     color: white;
 }
-
+div.thumbnail{
+    position: relative;
+}
+div.thumbnail i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    font-size: 34px;
+    color: #000000;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #ffffff;
+}
 div.red {
-  background-color: #e74c3c;
-  padding: 3px;
+    background-color: #e74c3c;
+    padding: 3px;
 }
 div.red i {
-  color: #e74c3c;
+    color: #e74c3c;
 }
 div.green {
-  background-color: #16a085;
-  padding: 3px;
+    background-color: #16a085;
+    padding: 3px;
 }
 div.green i {
-  color: #16a085;
+    color: #16a085;
 }
 div.blue {
-  background-color: #34495e;
-  padding: 3px;
+    background-color: #34495e;
+    padding: 3px;
 }
 div.blue i {
-  color: #34495e;
+    color: #34495e;
 }
