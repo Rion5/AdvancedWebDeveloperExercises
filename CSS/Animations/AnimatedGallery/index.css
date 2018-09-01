@@ -31,12 +31,16 @@ div.thumbnail{
     float: left;
     overflow: hidden;
     margin: 10px 1%;
-    min-width: 220px;
-    /* max-width: 310px; */
+    min-width: 225px;
     width: 100%;
     background: #000000;
     text-align: center;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+div.thumbnail img{
+    min-height: 250px;
+    /* max-height: 250px; */
+    /* width: 100%; */
 }
 div.thumbnail i{
     position: absolute;
@@ -52,6 +56,7 @@ div.thumbnail i{
 }
 div.thumbnail:hover img {
     opacity: 0.3;
+    /* filter: grayscale(100%); */
 }
 
 div.red {
@@ -74,4 +79,11 @@ div.blue {
 }
 div.blue i {
     color: #31679c;
+}
+
+/* Transition */
+div.thumbnail *{
+    box-sizing: border-box;
+    /* transition: <property> <duration> <timing-function> <delay> */
+    transition: all 0.5s ease-in-out;
 }
