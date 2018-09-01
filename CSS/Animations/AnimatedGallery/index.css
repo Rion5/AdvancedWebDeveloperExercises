@@ -53,10 +53,19 @@ div.thumbnail i{
     height: 60px;
     line-height: 60px;
     background: #ffffff;
+    transform: scale(0);
 }
 div.thumbnail:hover img {
     opacity: 0.3;
     /* filter: grayscale(100%); */
+}
+div.thumbnail:hover i{
+    transform: scale(1.5);
+}
+div.thumbnail *{
+    box-sizing: border-box;
+    /* transition: <property> <duration> <timing-function> <delay> */
+    transition: all 0.5s ease-in-out;
 }
 
 div.red {
@@ -79,11 +88,4 @@ div.blue {
 }
 div.blue i {
     color: #31679c;
-}
-
-/* Transition */
-div.thumbnail *{
-    box-sizing: border-box;
-    /* transition: <property> <duration> <timing-function> <delay> */
-    transition: all 0.5s ease-in-out;
 }
