@@ -53,14 +53,13 @@ div.thumbnail i{
     height: 60px;
     line-height: 60px;
     background: #ffffff;
-    transform: scale(0);
+    transform: translate(-50%, -50%) scale(0);
 }
 div.thumbnail:hover img {
     opacity: 0.3;
-    /* filter: grayscale(100%); */
 }
 div.thumbnail:hover i{
-    transform: scale(1.5);
+    transform: translate(-50%, -50%) scale(1.5);
 }
 div.thumbnail *{
     box-sizing: border-box;
