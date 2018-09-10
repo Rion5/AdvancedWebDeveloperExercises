@@ -15,3 +15,7 @@ Click link to view notes
 * [RandomImageApp](https://github.com/Rion5/AdvancedWebDeveloperExercises/tree/master/JS/AJAX/RandomImageApp)
 * [BitcoinPriceChecker](https://github.com/Rion5/AdvancedWebDeveloperExercises/tree/master/JS/AJAX/BitcoinPriceChecker)
 * [RandomUserGenerator](https://github.com/Rion5/AdvancedWebDeveloperExercises/tree/master/JS/AJAX/RandomUserGenerator)
+
+---
+
+## [**Jasmine Testing**](https://github.com/Rion5/AdvancedWebDeveloperExercises/tree/master/JS/JasmineTesting)
