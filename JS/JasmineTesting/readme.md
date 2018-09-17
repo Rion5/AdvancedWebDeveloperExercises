@@ -13,6 +13,24 @@
 **Expect:** "Here's what I expect"
 
 ## **Example**
+```html
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.2.1/jasmine.css">
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.2.1/jasmine.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.2.1/jasmine-html.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/3.2.1/boot.js"></script>
+  <script>
+  <!-- JasmineTesting goes here -->
+  </script>
+</body>
+</html>
+```
+JasmineTesting Script
 ```js
 var earth = {
     numberOfPlanetsAwayFromSun: 3
@@ -24,3 +42,5 @@ describe("Earth", function(){
     });
 });
 ```
+
+![image](https://user-images.githubusercontent.com/31965265/45632606-b4a85d80-ba6b-11e8-9395-60a69b5940ac.png)
