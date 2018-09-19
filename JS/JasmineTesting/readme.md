@@ -44,3 +44,15 @@ describe("Earth", function(){
 ```
 
 ![image](https://user-images.githubusercontent.com/31965265/45632606-b4a85d80-ba6b-11e8-9395-60a69b5940ac.png)
+
+## **Matchers**
+
+**Definition: Matchers are the functions that we attach to the result of the expect function**
+
+* **toBe / not.toBe**
+* **toBeCloseTo:**
+* **toBeDefined:**
+* **toBeTruthy / toBeFalsey:**
+* **toBeGreaterThan / toBeLessThan:**
+* **toContain**
+* **toEqual**
