@@ -20,3 +20,12 @@ h2 {
     margin:4em;
     text-align: center;
 }
+.loader{
+    margin: auto;
+    border: 16px solid #bdc3c7;
+    width: 120px;
+    height: 120px;
+    border-top-color: #1abb6c;
+    border-bottom-color: #3487db;
+
+}
