@@ -51,17 +51,21 @@ body {
 @keyframes moveSun{
     0%{
         transform: translate(-200px, 200px);
+        
     }
     25%{
         transform: translate(330px, 0px);
+        background-color: yellow;
     }
     50%{
         transform: translate(860px, -150px);
     }
     75%{
         transform: translate(1390px, 0px);
+        background-color: yellow;
     }
     100%{
         transform: translate(1920px, 200px);
+        background-color: red;
     }
 }
