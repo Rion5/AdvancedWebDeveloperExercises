@@ -20,6 +20,11 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    animation-name: moveSun;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 0;
 }
 
 @keyframes changeSkyColors {
@@ -40,5 +45,23 @@ body {
     }
     100%{
         background-color: black;
+    }
+}
+
+@keyframes moveSun{
+    0%{
+        transform: translate(-200px, 200px);
+    }
+    25%{
+        transform: translate(330px, 0px);
+    }
+    50%{
+        transform: translate(860px, -150px);
+    }
+    75%{
+        transform: translate(1390px, 0px);
+    }
+    100%{
+        transform: translate(1920px, 200px);
     }
 }
