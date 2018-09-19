@@ -10,9 +10,10 @@ body {
 
 .grass {
     background: green;
-    height: 600px;
+    height: 60%;
     width: 100%;
     position: absolute;
+    bottom: 0px;
  }
   
 .sun {
