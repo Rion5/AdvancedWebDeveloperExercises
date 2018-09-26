@@ -52,7 +52,9 @@ Items will be laid out following either the main axis (from main-start to main-e
   }
   ```
 
-* **align-items:**
+* **align-items:** Defines how space is distributed between items in flex container **(Along the cross axis)**
+  * Functions that same as justify-content, but works on the Cross Axis
+  * Default is 'stretch'
 
   ![image](https://user-images.githubusercontent.com/31965265/45904802-1e05d480-bdbc-11e8-8cc1-65dbbf156ba4.png)
 
