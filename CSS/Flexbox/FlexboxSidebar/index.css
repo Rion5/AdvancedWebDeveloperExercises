@@ -10,9 +10,17 @@ body {
     width: 15vw;
     font-family: raleway;
     background: #34495e;
+    display: flex;
+    flex-direction: column;
+    /*space-between will cause there to be equal space between the 2 section classes, 
+      There by, separating the sections to the top and bottom of the page */
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .item {
     color: white;
     font-size: 20px;
+    padding: 3px;
+    margin: 15px;
 }
