@@ -64,7 +64,7 @@ Items will be laid out following either the main axis (from main-start to main-e
   }
   ```
 
-* **align-content:**
+* **align-content:** Defines how space is distributed BETWEEN ROWS in a flex container, Along the cross axis.
 
   ![image](https://user-images.githubusercontent.com/31965265/45905103-332f3300-bdbd-11e8-9d01-be0b63e45754.png)
 
