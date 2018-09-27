@@ -1,2 +1,28 @@
 /* @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css); */
 @import url('https://fonts.googleapis.com/css?family=Raleway:200');
+
+nav{
+    display: flex;
+    flex-direction: row;
+    border: 2px solid red;
+    justify-content: flex-end;
+}
+
+
+/*  Large Tablet: When screen width is 991px or less justify-content */
+@media screen and (max-width: 991px) {
+    nav{
+        justify-content: space-around;
+    }
+}
+/*  Medium Tablet: When screen width is 767 or less justify-content */
+@media screen and (max-width: 767px) {
+
+}
+/*  Phone: When screen width is 479 or less justify-contents */
+@media screen and (max-width: 479px) {
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+}
