@@ -73,3 +73,41 @@ Items will be laid out following either the main axis (from main-start to main-e
   align-content: flex-start | flex-end | center | space-between | space-around | stretch;
   }
   ```
+
+  ---
+
+### **Properties for the Children (flex items)**
+
+* **order:** Specifies the order used to lay out items in their flex container
+
+  ![image](https://user-images.githubusercontent.com/31965265/46249902-15864d00-c3ff-11e8-86b8-61c604045755.png)
+
+  ```css
+  .item {
+  order: <integer>; /* default is 0 */
+  }
+  ```
+
+* **align-self:** Allows you to override align-items on individual flex items
+
+  ![image](https://user-images.githubusercontent.com/31965265/46249913-3a7ac000-c3ff-11e8-96b9-a85e1b4b70cf.png)
+
+  ```css
+  .item {
+  align-self: auto | flex-start | flex-end | center | baseline | stretch;
+  }
+  ```
+
+* **flex:** Defines how a flex item will grow or shrink to fit the available space in a container. Flex is the shorthand property for 3 other properties (***flex-grow***, ***flex-shrink***, ***flex-basis***)
+
+  ![image](https://user-images.githubusercontent.com/31965265/46249909-2cc53a80-c3ff-11e8-9873-61a940b3f7b3.png)
+
+  ```css
+  .item {
+  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+  }
+  ```
+
+  * **flex-grow:** Dictates how the unused space should be spread amongst flex items
+  * **flex-shrink:** Dictates how items should shirink when there isn't enough space in container
+  * **flex-basis:** Specifies the ideal size of a flex item, BEFORE its placed into a flex container
