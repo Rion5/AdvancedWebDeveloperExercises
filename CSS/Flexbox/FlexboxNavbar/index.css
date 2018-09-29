@@ -4,20 +4,40 @@
 nav{
     display: flex;
     flex-direction: row;
-    border: 2px solid red;
+    /* border: 2px solid red; */
     justify-content: flex-end;
 }
 
+a{
+    margin: 20px;
+    font-size: 40px;
+    text-decoration: none;
+    color: #7d9ac0;
+    font-family: raleway;
+    border-bottom: 1px solid #50d8b4;
+    transition: color 0.5s ease-out;
+}
 
+a:hover{
+    color: #3795d4;
+    border-bottom-color: #3795d4;
+}
+
+i{
+    margin-right: 8px;
+}
 /*  Large Tablet: When screen width is 991px or less justify-content */
 @media screen and (max-width: 991px) {
     nav{
         justify-content: space-around;
+        white-space: nowrap;
     }
 }
 /*  Medium Tablet: When screen width is 767 or less justify-content */
 @media screen and (max-width: 767px) {
-
+    a{
+        font-size: 32px;
+    }
 }
 /*  Phone: When screen width is 479 or less justify-contents */
 @media screen and (max-width: 479px) {
