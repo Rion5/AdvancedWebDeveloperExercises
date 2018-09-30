@@ -16,6 +16,7 @@ article{
 nav{
     flex-basis: 20%;
     background: rgb(104, 202, 104);
+    order: -1;
 }
 
 aside{
