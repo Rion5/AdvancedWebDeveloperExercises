@@ -109,5 +109,5 @@ Items will be laid out following either the main axis (from main-start to main-e
   ```
 
   * **flex-grow:** Dictates how the unused space should be spread amongst flex items
-  * **flex-shrink:** Dictates how items should shirink when there isn't enough space in container
+  * **flex-shrink:** Dictates how items should shrink when there isn't enough space in container
   * **flex-basis:** Specifies the ideal size of a flex item, BEFORE its placed into a flex container
