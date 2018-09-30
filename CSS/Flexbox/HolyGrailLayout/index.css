@@ -54,4 +54,7 @@ header, footer{
     nav{
         order: 0;
     }
+    header, footer {
+        flex-basis: 50px;
+    }
 }
