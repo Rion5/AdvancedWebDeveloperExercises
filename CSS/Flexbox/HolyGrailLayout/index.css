@@ -8,6 +8,12 @@ header{
     display: flex;
     justify-content: space-between;
 }
+/* Select everything inside main, header, and footer divs */
+main > *, header, footer{
+    margin: 3px;
+    padding: 5px;
+    border-radius: 5px;
+}
 
 main{
     display: flex;
