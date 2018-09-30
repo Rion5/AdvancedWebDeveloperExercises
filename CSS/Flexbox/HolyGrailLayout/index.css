@@ -10,22 +10,31 @@ main{
 }
 
 article{
-    flex-basis: 60%;
     background: lightcoral;
+    flex-basis: 60%;
+    flex-grow: 5; /*Article will grow 5x faster than nav and aside*/
 }
 
 nav{
-    flex-basis: 20%;
     background: rgb(104, 202, 104);
     order: -1;
+    flex-basis: 20%;
+    flex-grow: 1;
 }
 
 aside{
     flex-basis: 20%;
     background:lightgreen;
+    flex-grow: 1;
 }
 
 header, footer{
     background: lightblue;
     flex-basis: 100px;
+}
+
+@media screen and (max-width: 640px){
+    main{
+        flex-direction: column;
+    }
 }
