@@ -4,12 +4,18 @@ body{
     min-height: 100vh;
 }
 
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
 main{
     display:flex;
     min-height:  800px; /*Note: I could use flex-basis: 800px as well*/
 }
 
 article{
+    /* flex: 5 0 60%; Shorthand for code below| [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
     background: lightcoral;
     flex-basis: 60%;
     flex-grow: 5; /*Article will grow 5x faster than nav and aside*/
@@ -36,6 +42,7 @@ header, footer{
 @media screen and (max-width: 640px){
     main{
         flex-direction: column;
+        flex-grow: 1;
     }
     nav{
         order: 0;
