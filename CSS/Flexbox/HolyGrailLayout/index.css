@@ -10,11 +10,12 @@ header{
 }
 
 main{
-    display:flex;
-    min-height:  800px; /*Note: I could use flex-basis: 800px as well*/
+    display: flex;
+    min-height: 1080px; /*Note: I could use flex-basis: 1080px as well*/
+
 }
 
-article{
+article{  
     /* flex: 5 0 60%; Shorthand for code below| [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ] */
     background: lightcoral;
     flex-basis: 60%;
