@@ -1,4 +1,4 @@
-/* General Styles */
+/* ========== General Styles ========== */
 
 *{
     margin: 0;
@@ -189,4 +189,12 @@ section:not(.hero):nth-child(even){
 .content-sub-section .grid li h4{
     font-size: 30px;
     margin: 25px 0;
+}
+
+/* ========== Testimonials Section Styles ========== */
+.testimonials .quote{
+    font-weight: 300;
+    font-size: 22px;
+    margin: 40px 0 25;
+    line-height: 1.5;
 }
