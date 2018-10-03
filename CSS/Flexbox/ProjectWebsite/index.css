@@ -249,7 +249,7 @@ footer p{
 @media screen and (max-width: 1100px){
     .content-section .grid li.small,
     .content-section .grid li.large{
-        flex-basis: 50%;
+        flex-basis: 50%; /*2 Images per Row*/
     }
 }
 
@@ -281,6 +281,19 @@ footer p{
     /* ========== Content Images ========== */
     .content-section .grid li.small,
     .content-section .grid li.large{
-        flex-basis: 100%;
+        flex-basis: 100%; /*1 Image per Row*/
+    }
+    /* ========== Content-Sub-Section Styles ========== */
+    .content-sub-section .grid li{
+        flex-basis: 100%; /* Place Content-Sub Section on 1 row */
+        padding: 20px;
+    }
+    /* ========== Testimonials Section Styles ========== */
+    .testimonials .quote{
+        font-size: 18px;
+        margin: 15px 0;
+    }
+    .testimonials .author{
+        font-size: 14px;
     }
 }
