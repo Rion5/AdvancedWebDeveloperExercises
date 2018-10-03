@@ -92,7 +92,7 @@ header nav li{
     height: 100%;
     background-size: cover;
     z-index: -1;
-    background-color: #80a3db;
+    background-color: #82a4db;
 }
 
 .hero h1{
@@ -109,7 +109,7 @@ header nav li{
     padding: 20px 46px;
 }
 
-hero-content-area {
+.hero-content-area {
     opacity: 0;
     margin-top: 100px;
     animation: 1s slidefade 1s forwards;
@@ -153,6 +153,7 @@ section p{
     text-align: center;
 }
 
+
 .content-section .grid li{
     height: 350px;
     padding: 20px;
@@ -167,4 +168,25 @@ section p{
 
 .content-section .grid li.large{
     flex-basis: 70%;
+}
+
+/* ========== Content-Sub-Section Styles ========== */
+section:not(.hero):nth-child(even){
+    /* Excluding the Hero section, every even section should change background colors */
+    background-color: #f5f5f5;
+}
+
+.content-sub-section .grid li{
+    padding: 50px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.content-sub-section .grid li i{
+    font-size: 30px;
+    /* color: #4f62cc; */
+}
+.content-sub-section .grid li h4{
+    font-size: 30px;
+    margin: 25px 0;
 }
