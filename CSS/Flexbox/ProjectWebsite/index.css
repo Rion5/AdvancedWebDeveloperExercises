@@ -198,3 +198,24 @@ section:not(.hero):nth-child(even){
     margin: 40px 0 25;
     line-height: 1.5;
 }
+
+/* ========== Contact Section Styles ========== */
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.contact form .btn{
+    padding: 20px 40px;
+}
+
+.contact form input{
+    padding: 15px;
+    margin-right: 30px;
+    font-size: 18px;
+    color: #555;
+    flex: 1;
+}
