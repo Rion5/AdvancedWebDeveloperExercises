@@ -244,3 +244,43 @@ footer p{
     opacity: 0.6;
     align-self: center;
 }
+
+/* ========== Media Queries ========== */
+@media screen and (max-width: 1100px){
+    .content-section .grid li.small,
+    .content-section .grid li.large{
+        flex-basis: 50%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    section{
+        padding: 50px 20px;
+    }
+    /* ========== Header ========== */
+    header{
+        padding: 20px 50px;
+        flex-direction: column;
+    }
+    header h2{
+        margin-bottom: 15px;
+    }
+    /* ========== Hero ========== */
+    .hero{
+        min-height: 600px;
+    }
+    .hero h1{
+        font-size: 48px;
+    }
+    .hero h3{
+        font-size: 24px;
+    }
+    .hero a.btn{
+        padding: 15px;
+    }
+    /* ========== Content Images ========== */
+    .content-section .grid li.small,
+    .content-section .grid li.large{
+        flex-basis: 100%;
+    }
+}
