@@ -50,9 +50,17 @@ describe("Earth", function(){
 **Definition: Matchers are the functions that we attach to the result of the expect function**
 
 * **toBe / not.toBe**
-* **toBeCloseTo:**
-* **toBeDefined:**
-* **toBeTruthy / toBeFalsey:**
-* **toBeGreaterThan / toBeLessThan:**
+  * Will use === to compare a value with another
+  * NOTE: Different from toEquals.
+* **toBeCloseTo**
+  * Compare 2 values and accepts a 2nd parameter for precision
+* **toBeDefined**
+  * Used to make sure certain variables have a specific values and not undefined
+* **toBeTruthy / toBeFalsey**
+  * Used when we expect a value (when converted t o a boolean) to be true or false
+* **toBeGreaterThan / toBeLessThan**
+  * Used to check a value or greater or less than the 2nd parameter
 * **toContain**
+  * Used to see if a value is contained in an array.
 * **toEqual**
+  * Used to compare reference in memory
