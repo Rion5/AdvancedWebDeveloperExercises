@@ -64,3 +64,10 @@ describe("Earth", function(){
   * Used to see if a value is contained in an array.
 * **toEqual**
   * Used to compare reference in memory
+
+## **Hooks**
+
+* **beforeEach / afterEach**
+  * Run before/after each "it" callback
+* **beforeAll / afterAll**
+  * Run before/after all test! Does not reset in between
