@@ -149,3 +149,37 @@ describe("#getUserInfo", function(){
   });
 });
 ```
+
+---
+
+## **TDD - Test Driven Development**
+
+### Red - Green - Refactor
+
+1) Write the Tests
+2) See the tests fail
+3) Write code to pass the tests
+4) Refactor code as necessary
+5) Repeat
+
+## **BDD - Behavior Driven Development**
+
+### A subset of TDD
+
+* Involves being verbose with our style and describing the behavior of the functionality.
+* Helpful when testing the design of the software
+
+---
+
+## **Other kinds of tests**
+
+* Unit Tests
+  * Tests individual parts of the application.
+* Integration tests
+  * Tests how our units behave together.
+* Acceptance tests
+  * Involves performing tests on the full system.
+  * This could mean using the application in the browser or on a device to see whether the application functionality satisfies a specification provided.
+  * Main purpose is to evaluate the entire business or system requirements
+* Stress test
+  * Help determine how effective our application can be under unfavorable conditions such as systems going down, high traffic, etc.
