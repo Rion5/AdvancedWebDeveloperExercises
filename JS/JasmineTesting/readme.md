@@ -101,3 +101,51 @@ describe("add", function(){
   });
 });
 ```
+
+## **Clock**
+
+**Definition:** Jasmine Clock is available for testing time dependent code. It is installed by invoking ...
+
+```js
+jasmine.clock().install
+```
+
+**Example:**
+
+```js
+describe("a simple setTimeout", function(){
+  var sample;
+  beforeEach(function(){
+    sample = jasmine.createSpy("sampleFunction");
+    jasmine.clock().install();
+  });
+  afterEach(function(){
+    jasmine.clock().uninstall();
+  });
+  it("is only invoked after 1000 milliseconds", function(){
+    setTimeout(function(){
+      sample();
+    }, 1000);
+    jasmine.clock().tick(999);
+    expect(sample.not.toHaveBeenCalled();
+    jasmine.clock().tick(1);
+    expect(sample).toHaveBeenCalled();
+  });
+})
+```
+
+**Async Tests:**
+```js
+function getUserInfo(username){
+  return $.getJSON('https://api.github.com/users/' + username);
+}
+
+describe("#getUserInfo", function(){
+  it("returns the correct name for the user", function(done){
+    getUserInfo('Rion5').then(function(data){
+      expect(data.name).toBe('Chai Grindean');
+      done();   //Note: done is being passed and used in the callback function
+    });
+  });
+});
+```
