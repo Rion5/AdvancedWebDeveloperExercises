@@ -71,3 +71,33 @@ describe("Earth", function(){
   * Run before/after each "it" callback
 * **beforeAll / afterAll**
   * Run before/after all test! Does not reset in between
+
+## **Spies**
+
+**Definition:**
+Mock is a fake object that poses as function, without having to go through te overhead of creating the real object. When you create a mock object ite create a fake object that takes the place of the real object. This can speed up the time it takes to run a test.
+
+Mocks can be used to retrieve certain values like how many times the mock function was called. What value the function returned. And how many parameters the function was called with In Jasmine, mocks are referred to as Spies
+
+* A spy can stub (mimic) any function and track calls to it and all arguments.
+* Spies only exists in the describe or it block in which it is defined.
+
+**Example**
+
+```js
+function add(a, b, c){
+  return a+b+c;
+}
+
+describe("add", function(){
+  var addSpy, result;       //Lexical Scoping
+  beforeEach(function(){
+    addSpy = spyOn(window, 'add');
+    result add spy(1, 2, 3);
+  });
+  it("can have params tested", function(){
+    expect(addSpy).toHaveBeenCalled();
+    expect(addSpy).toHaveBeenCalledWith(1,2, 3);
+  });
+});
+```
