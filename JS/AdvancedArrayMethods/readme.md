@@ -42,7 +42,7 @@ function showFirstAndLast(arr){
 }
 ```
 
-**Function: Accept an array of objects, a key and a value and returns the array passed to the function with the new key and value added for each object.**
+**Function:** Accept an array of objects, a key and a value and returns the array passed to the function with the new key and value added for each object.
 
 ```js
 function addKeyAndValue(arr,key,value){
@@ -52,3 +52,30 @@ function addKeyAndValue(arr,key,value){
   return arr;
 }
 ```
+
+---
+
+## **map**
+
+**Definition:** The map objects holds key-value pairs. Any value (both objects and primitive values) may be used as either a key or a value.
+
+* Creates a new array
+* Iterates through an array
+* Runs a callback function for each value in the array.
+* Pushes the result of the callback function to the new array
+* Returns the new array.
+* **map ALWAYS returns a new array of the SAME length as the array it is invoked on**
+
+**Function:** Accepts an array of objects and returns a new array with the values of the key with a name of first and value of a key with in the name of last in each object
+
+```js
+var arr = [1, 2, 3];
+var doubleArr = (arr) => {
+  return arr.map((value, index, array) => {
+    return value * 2;
+  });
+}
+//returned: [2, 4, 6]
+```
+
+---
