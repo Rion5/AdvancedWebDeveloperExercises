@@ -79,3 +79,19 @@ var doubleArr = (arr) => {
 ```
 
 ---
+
+## **filter**
+
+**Definition:** Create new array with all the elements that pass the test implemented by the provided function.
+
+* Creates a new array
+* Iterates through an array
+* Runs a callback function on each values in the array
+* If the callback function returns true, that values will pushed to the new array
+* **The callback ALWAYS returns a boolean**
+
+**Function:**
+
+```js
+
+```
