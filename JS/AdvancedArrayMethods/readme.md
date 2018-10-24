@@ -88,10 +88,17 @@ var doubleArr = (arr) => {
 * Iterates through an array
 * Runs a callback function on each values in the array
 * If the callback function returns true, that values will pushed to the new array
+* If the callback function returns false, that value will be ignored from the new array
 * **The callback ALWAYS returns a boolean**
 
 **Function:**
 
 ```js
-
+var arr = [1,2,3];
+arr.filter(function(value, index, array){
+  // no need for an if statement
+  // just return an expression
+  // that evaluates to true or false.
+  return value > 2;
+})
 ```
