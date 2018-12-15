@@ -1,6 +1,6 @@
 var db = require("../models");
 
-//INDEX Route: show all todos
+//Index Route: show all todos
 //GET
 exports.getTodos = (req, res) => {
     db.Todo.find()
@@ -8,7 +8,7 @@ exports.getTodos = (req, res) => {
     .catch(err => res.send(err));
 };
 
-//CREATE Route: new todo 
+//Create Route: new todo 
 //POST
 exports.createTodo = (req, res) => {
     db.Todo.create(req.body)
@@ -21,7 +21,7 @@ exports.createTodo = (req, res) => {
     });
 };
 
-//SHOW Route: info for a certain todo
+//Show Route: info for a certain todo
 //GET
 exports.getTodo = (req, res) => {
     db.Todo.findById(req.params.todoId)
@@ -33,7 +33,7 @@ exports.getTodo = (req, res) => {
     });
 };
 
-//UPDATE Route: update a certain todo and redirect
+//Update Route: update a certain todo and redirect
 //PUT
 exports.updateTodo = (req, res) => {
     //Find the _id in the MongoDb | id == req.params.todoId
@@ -50,7 +50,7 @@ exports.updateTodo = (req, res) => {
 //DELETE
 exports.deleteTodo = (req, res) => {
     //Find the _id in the MongoDb | id == req.params.todoId
-    db.Todo.remove({_id: req.params.todoId})
+    db.Todo.deleteOne({_id: req.params.todoId})
     .then(()=>{
         res.json({message: "Todo Deleted!"});
     })
